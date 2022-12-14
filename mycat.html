@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('image/sky.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+</style>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: Californian FB, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<center><div class="about-section">
+  <h1>MY PERSONAL WEBSITE</h1>
+  <h2>About Me: Aziera Jiey</h2>
+</div>
+
+<table border="1" width="100%">
+<tr>
+<td>
+<script>function clock(){var date=new Date();var weekday=date.getDay();var year=date.getYear();var month=date.getMonth();var day=date.getDate();var hour=date.getHours();var minute=date.getMinutes();var second=date.getSeconds();var days=new Array ('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday' );var months=new Array('January','February','March','April','May','June','July','August','September','October','November','December');var monthname=months[month];var dayname=days[weekday];var ap;if(year<1000){year=year+1900} if(hour>=12){hour=hour-12;ap='PM'}else{ap='AM'} if(minute<10){minute='0'+minute} if(second<10){second='0'+second};
+document.getElementById('time').innerHTML=hour+' : '+ minute +' : '+second+' ' +ap; 
+document.getElementById('da').innerHTML=dayname;
+document.getElementById('dt').innerHTML=monthname+' '+day+', '+year;
+setTimeout('clock()',1000 )}window.onload=function(){clock()}
+// Widget Code by https://karvitt.com/widgets/
+</script>
+<div align="center"><div style="font-family:Berlin Sans FB; color: #000000; font-size: 25px"<p style="font-size: 32px"; align="center"><b>Digital Clock</b></div><div id=cover><div id=dt></div><div id=da></div><div id=time></div></div></div>
+</tr>
+	</td>
+	</table>
+	<br>
+<style>
+<center>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: purple;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" style="font-family:Berlin Sans FB">
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="myfamily.html">My Family</a>
+  <a href="education.html">My Education</a>
+  <a href="myhobby.html">My Hobby</a>
+  <a href="myfavourite.html">My Favourite</a>
+  <a class="active" href="mycat.html">My Cat</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div style="padding-left:16px" >
+</div>
+
+</body>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: ten equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 12.5%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2 style="color:brown;">MY CAT</h2>
+  <p style="color:maroon;">This is my beloved cat 😍❤</p>
+  <p style="color:maroon;">Click the image below for the biggest picture and to see their clear cuteness</p>
+</div>
+
+<!-- The ten columns -->
+<div class="row">
+  <div class="column">
+    <img src="image/kayme.jpg" alt="Kayme" style="width:95%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/boruto.jpg" alt="Boruto" style="width:105%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kutam.jpg" alt="Kutam" style="width:78%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/loli.jpg" alt="Loli" style="width:105%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kucik.jpg" alt="Kucik" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kuyen.jpg" alt="Kuyen" style="width:105%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/aren.jpg" alt="Aren" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kodek.jpg" alt="Kodek" style="width:88%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:40%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+</body>
+</html>
